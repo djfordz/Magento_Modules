@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<config>
+    <tabs>
+        <filolocale translate="label" module="filolocale">
+            <label>Filofax Modules</label>
+            <sort_order>410</sort_order>
+        </filolocale>
+    </tabs>
+    <sections>
+        <filolocale translate="label" module="filolocale">
+            <class>separateor-top</class>
+            <label>Locale Switcher</label>
+            <tab>filolocale</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>Locale Switcher Options</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <stores translate="label">
+                            <label>Store List</label>
+                            <frontend_model>filolocale/adminhtml_locales</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized</backend_model>
+                            <comment>Add title you want shown on frontend and url associated with store</comment>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </stores>
+                    </fields>
+                </general>
+            </groups>
+        </filolocale>
+    </sections>
+</config>
+

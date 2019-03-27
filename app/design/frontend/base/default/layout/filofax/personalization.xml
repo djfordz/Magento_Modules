@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <catalog_product_view>
+        <reference name="head">
+            <action method="addJs"><script>filofax/personalization.js</script></action>
+            <action method="addItem"><type>skin_css</type><name>css/filofax/personalization.css</name></action>
+        </reference>
+    </catalog_product_view>
+</layout>

@@ -1,0 +1,22 @@
+<?php /** @var Filofax_Upsells_Block_Upsells $this */?>
+<?php /** @var Mage_SalesRule_Model_Rule $rule */?>
+
+<?php $validRules = $this->getValidRules(); 
+if (Mage::helper('filoupsell')->isEnabled() && isset($validRules)): ?>
+    <?php foreach($validRules as $rule) :?>
+        <?php if ($this->isUpsellBanner($rule)): ?>
+            <div class="product-options">
+                <?php $labels = $rule->getStoreLabels() ?>
+                <?php if (isset($labels[Mage::app()->getStore()->getId()])): ?>
+                    <div class="upsell-desc">
+                        <input type="checkbox" class="checkbox upsell-checkbox" id="upsell-checkbox" name="related_products[]" value enabled />
+                        
+                        <h2><?php echo Mage::helper('filoupsell')->__($labels[Mage::app()->getStore()->getId()])?></h2>
+                    </div>
+                <?php endif; ?>
+                <div style="clear: both;"></div>
+            </div>
+        <?php endif;?>
+    <?php endforeach; ?>
+<?php endif; ?>
+

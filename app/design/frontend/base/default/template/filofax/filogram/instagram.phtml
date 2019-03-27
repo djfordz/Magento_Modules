@@ -1,0 +1,102 @@
+<?php
+
+$posts = $this->getLatestPosts();
+$options = $this->getInstagramOptions();
+$postsArr = $posts['medias'];
+$helper = Mage::helper('filogram');
+$randId = $this->getWidgetId();
+$username = $this->getUsername();
+if (count($postsArr) && $helper->isEnabled()) { ?>
+    <div class="instagram slider-container">
+        <div class="title"><h1><?php echo $this->__($options['title']); ?><a target="_blank" href="https://www.instagram.com/<?php echo $username; ?>"> @<?php echo $username; ?></a></h1></div>
+        <div id="instagram-slider-<?php echo $randId; ?>">
+            <div class="instagram-holder">
+                <div class="widget-slider">
+                    <ul class="instagram">
+                        <?php
+                            foreach($postsArr as $value) {
+                                $html = '<li>';
+                                $html .= '<a ' . 'target="_blank"' . ' href="' . $value->link . '">';
+                                $html .= '<img src="' . $value->displaySrc . '"' . 'style="max-width: ' . $options['image_width'] . 'px; max-height: ' . $options['image_height'] . 'px;" />';
+                                $html .= '</a>';
+                                $html .= '</li>';
+                                echo $html;
+                            }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+            <div id="instagram-slider-<?php echo $randId; ?>" class = "instagram-slider next"><i class="fa
+            fa-angle-right"></i></div>
+            <div id="instagram-slider-<?php echo $randId; ?>" class = "instagram-slider prev unselectable"><i class="fa
+            fa-angle-left"></i></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    function instagramSet() {
+        jQuery('instagram.slider-container').each(function(){
+            if(!jQuery(this).prev().hasClass('page-title')){
+                jQuery(this).addClass('no-title');
+            }
+        });
+
+        function sliderLauncher<?php echo $randId; ?>(){
+            jQuery('#instagram-slider-<?php echo $randId; ?> .widget-slider').iosSlider({
+                responsiveSlideWidth: true,
+                snapToChildren: true,
+                desktopClickDrag: true,
+                infiniteSlider: false,
+                scrollbar: true,
+                scrollbarHide: false,
+                scrollbarLocation: 'bottom',
+                responsiveSlideContainer: true,
+                responsiveSlides: true,
+                autoslideHoverPause: true
+                <?php echo $this->getSliderOptions(); ?>,
+                navNextSelector: '#instagram-slider-<?php echo $randId; ?> .next',
+                navPrevSelector: '#instagram-slider-<?php echo $randId; ?> .prev'
+            });
+        }
+
+        function instagram_slider_height_<?php echo $randId; ?>() {
+            setTimeout(function(){
+                var instagram_slider_height = 0;
+
+                jQuery('#instagram-slider-<?php echo $randId; ?> .instagram li').each(function(){
+                    if(jQuery(this).height() > instagram_slider_height){
+                        instagram_slider_height = jQuery(this).height();
+                    }
+                });
+
+                jQuery('#instagram-slider-<?php echo $randId; ?> .widget-slider').css({
+                    'min-height': (instagram_slider_height+2),
+                    'height': 'auto'
+                });
+            }, 1000);
+        }
+
+        instagram_slider_height_<?php echo $randId; ?>();
+
+        jQuery(window).resize(function(){instagram_slider_height_<?php echo $randId; ?>();});
+
+        /* Slider Start */
+        slidesWidth = 0;
+
+        jQuery('#instagram-slider-<?php echo $randId; ?> .instagram li').each(function(){
+            slidesWidth += jQuery(this).outerWidth(true);
+        });
+
+        console.log(slidesWidth);
+
+        if(slidesWidth > 1252) {
+            sliderLauncher<?php echo $randId; ?>();
+        } else {
+            jQuery('#instagram-slider-<?php echo $randId; ?>').addClass('slider-off');
+        }
+    };
+    addLoadEvent(instagramSet);
+    </script>
+<?php
+}
+

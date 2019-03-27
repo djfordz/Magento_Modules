@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<widgets>
+    <filolocale_switcher type="filolocale/switcher" translate="name description" module="filolocale">
+        <name>Filofax Locale Switcher</name>
+        <description>Lists Store Locales</description>
+        <is_email_compatible>0</is_email_compatible>
+        <parameters>
+            <template>
+                <visible>0</visible>
+                <value>cms/widget/filofax/locale.phtml</value>
+            </template>
+        </parameters>
+    </filolocale_switcher>
+</widgets>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Filofax_Affiliate>
+            <version>1.0.0</version>
+        </Filofax_Affiliate>
+    </modules>
+
+    <global>
+        <blocks>
+            <filoaffiliate>
+                <class>Filofax_Affiliate_Block</class>
+            </filoaffiliate>
+        </blocks>
+        <models>
+            <filoaffiliate>
+                <class>Filofax_Affiliate_Model</class>
+            </filoaffiliate>
+        </models>
+        <helpers>
+            <filoaffiliate>
+                <class>Filofax_Affiliate_Helper</class>
+            </filoaffiliate>
+        </helpers>
+        <resources>
+            <affiliate_setup>
+                <setup>
+                    <module>Filofax_Affiliate</module>
+                    <class>Filofax_Affiliate_Model_Mysql4_Setup</class>
+                </setup>
+            </affiliate_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <filoaffiliate>
+                    <file>filofax/affiliate.xml</file>
+                </filoaffiliate>
+            </updates>
+        </layout>
+    </frontend>
+</config>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system module="adminhtml">
+            <children>
+                <tools module="adminhtml">
+                    <children>
+                        <filofax_bulkupload translate="title" module="filofax_bulkupload">
+                            <title>Filofax Bulk Image Uploader</title>
+                            <sort_order>10</sort_order>
+                            <action>filofax_bulkupload/adminhtml_bulkImport_bulkImageImport/index</action>
+                        </filofax_bulkupload>
+                    </children>
+                </tools>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system module="adminhtml">
+                        <children>
+                            <tools module="adminhtml">
+                                <children>
+                                    <filofax_bulkupload translate="title" module="filofax_bulkupload">
+                                        <title>Filofax Bulk Image Uploader</title>
+                                        <sort_order>100</sort_order>
+                                    </filofax_bulkupload>
+                                </children>
+                            </tools>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

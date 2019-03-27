@@ -1,0 +1,29 @@
+/* Widget: Brand Slider */
+ul.instagram { overflow: hidden;}
+ul.instagram li { list-style: none; float: left; margin-right: 20px; margin-bottom: 10px; position: relative;}
+ul.instagram li a {display: block;}
+.instagram.slider-container {padding:0;}
+.instagram.slider-container .title { margin-bottom: 10px; }
+
+/* username link color */
+#footer .footer-topline .instagram.slider-container .title h1 a { color: #171796; }
+#footer .footer-topline .instagram.slider-container .title h1 a:hover { color: #75B03B; }
+
+.instagram.slider-container .instagram-holder {overflow: hidden;}
+.instagram.slider-container .widget-slider {height: auto; margin-right: -20px;}
+.instagram.slider-container .widget-slider ul.instagram {overflow: visible !important;}
+.instagram.slider-container .slider-off .next,
+.instagram.slider-container .slider-off .prev {display: none;}
+.instagram.slider-container .prev,
+.instagram.slider-container .next { top: 50%;}
+.instagram.slider-container .widget-slider ul.instagram:after {display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden;}
+
+.instagram.slider-container .prev {left: 0px;}
+.instagram.slider-container .next {right: 0px;}
+
+/* Footer Changes @dford 10-22-2018 */
+#footer .footer-topline .grid_12:first-child { background-color: #f0f0f0; border: none !important;}
+.footnewsform { float: right; }
+.footnewsform input.input-text { width: 300px; }
+.footnewsform button { margin-top: 8px; margin-right: 8px; }
+.footnewsform button span span { line-height: 1.2em; }

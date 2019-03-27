@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Filofax_Personalization>
+            <version>1.0.0</version>
+        </Filofax_Personalization>
+    </modules>
+    <global>
+        <blocks>
+            <filofax_personalization>
+                <class>Filofax_Personalization_Block</class>
+            </filofax_personalization>
+        </blocks>
+        <helpers>
+            <filofax_personalization>
+                <class>Filofax_Personalization_Helper</class>
+            </filofax_personalization>
+        </helpers>
+        <models>
+            <filofax_personalization>
+                <class>Filofax_Personalization_Model</class>
+            </filofax_personalization>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <filofax_personalization>
+                    <file>filofax/personalization.xml</file>
+                </filofax_personalization>
+            </updates>
+        </layout>
+    </frontend>
+</config>

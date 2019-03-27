@@ -1,0 +1,38 @@
+.upsell-checkbox {
+    -webkit-appearance: none;
+	background-color: transparent;
+    color: #222;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.upsell-checkbox:checked {
+	background-color: transparent;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.upsell-checkbox:checked:after {
+	content: '\2714';
+	font-size: 22px;
+	position: absolute;
+	top: 3px;
+	left: 2px;
+	color: #222222;
+}
+
+.yearly-upsells.disabled .upsell-checkbox {
+    background-color: #dcdcdc;
+}
+
+.yearly-upsells.disabled {
+    opacity: 0.6;
+}
+.yearly-upsells .upsell-desc h1, .yearly-upsells .upsell-desc h2, .yearly-upsells .upsell-desc h3, .yearly-upsells .upsell-desc h4, .yearly-upsells .upsell-desc h5, .yearly-upsells .upsell-desc h6, .yearly-upsells .upsell-desc p, .yearly-upsells .upsell-desc li {
+    display: inline-block;
+}

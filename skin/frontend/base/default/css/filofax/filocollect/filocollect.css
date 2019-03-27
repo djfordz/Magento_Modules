@@ -1,0 +1,83 @@
+/**
+ * Collections
+ */
+.category-collections .content-wrapper .container_12, .category-collections .content-wrapper .container_12 .grid_12 {
+    max-width: 960px;
+}
+.filofax-collections .container_12 .grid_10 {
+    margin: 0 auto;
+}
+.filofax-collections .filofax-collections-item {
+    width: 225px;
+    margin: 5px;
+}
+.filofax-collections li, .filofax-collections img {
+    display: inline-block;
+}
+
+.filofax-collections-overlay {
+    text-align: center;
+    width: 225px;
+    height: auto;
+    padding: 2px;
+    background:rgb(255,255,255);  
+    background: transparent\9;  
+    background:rgba(255,255,255,0.4);  
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);  
+    zoom: 1;  
+}
+
+.filofax-collections-overlay-hide {
+    display: none;
+}
+
+.filofax-collections-overlay-show {
+    display: block;
+}
+
+.filofax-collections a, .filofax-collections a:hover {
+    transition: none;
+    color: #424242;
+}
+
+/**
+ * Gifts
+ */
+.category-gifts .content-wrapper .container_12, .category-gifts .content-wrapper .container_12 .grid_12 {
+    max-width: 1024px;
+}
+.filofax-gifts .container_12 .grid_10 {
+    margin: 0 auto;
+}
+.filofax-gifts .filofax-gifts-item {
+    width: 325px;
+    margin: 5px;
+}
+.filofax-gifts li, .filofax-gifts img {
+    display: inline-block;
+}
+
+.filofax-gifts-overlay {
+    text-align: center;
+    width: 225px;
+    height: auto;
+    padding: 2px;
+    background:rgb(255,255,255);
+    background: transparent\9;
+    background:rgba(255,255,255,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+    zoom: 1;
+}
+
+.filofax-gifts-overlay-hide {
+    display: none;
+}
+
+.filofax-gifts-overlay-show {
+    display: block;
+}
+
+.filofax-gifts a, .filofax-gifts a:hover {
+    transition: none;
+    color: #424242;
+}

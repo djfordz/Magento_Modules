@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <filolocale translate="title">
+                        <title>Locale Switcher</title>
+                        <sort_order>110</sort_order>
+                        <children>
+                            <stores translate="title">
+                                <title>Store List</title>
+                                <sort_order>10</sort_order>
+                            </stores>
+                        </children>
+                    </filolocale>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <filolocale translate="title" module="filolocale">
+                                        <title>Filofax Locale Switcher</title>
+                                        <sort_order>100</sort_order>
+                                    </filolocale>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,50 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: dford
+ * Date: 10/30/18
+ * Time: 12:02 PM
+ */
+$collection = $this->getProductCollection('gifts');
+?>
+<div class="filofax-gifts">
+    <?php if (!empty($collection)): ?>
+        <?php if ($collection->count() > 0): ?>
+             <ul class="filofax-gifts-list">
+                <?php foreach ($collection as $category): ?>
+                <?php $resizedImageUrl = $this->resizeImageUrl($category->getCollectionsImage(), 325); ?>
+                    <li class="filofax-gifts-item">
+                        <a class="filofax-gifts-link" href="<?php echo $category->getUrl(); ?>" title="<?php echo
+                        $category->getName(); ?>">
+                            <img class="filofax-gifts-img" src="<?php echo $resizedImageUrl; ?>"  alt="<?php echo
+                            $category->getName(); ?>" />
+                            <div class="filofax-gifts-overlay filofax-gifts-overlay-hide">
+                            <h1><?php echo $category->getName(); ?></h1>
+                            </div>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+    <?php endif; ?>
+<script>
+function func1() {
+  alert("This is the first.");
+}
+function func2() {
+  alert("This is the second.");
+}
+
+
+
+function setGiftsTitle() {
+ jQuery('.filofax-gifts-item').each(function(index) {
+    var overlay = jQuery(this).find('.filofax-gifts-overlay');
+    var position = jQuery(this).position();
+    jQuery(overlay).css({display: 'block', position: 'absolute', top: position.top + 20, left: position.left + 55});
+    });
+}
+
+addLoadEvent(setGiftsTitle);
+</script>
+</div>

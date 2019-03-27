@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Filofax_Locale>
+            <version>0.0.1</version>
+        </Filofax_Locale>
+    </modules>
+
+    <global>
+        <blocks>
+            <filolocale>
+                <class>Filofax_Locale_Block</class>
+            </filolocale>
+        </blocks>
+        <models>
+            <filolocale>
+                <class>Filofax_Locale_Model</class>
+            </filolocale>
+        </models>
+        <helpers>
+            <filolocale>
+                <class>Filofax_Locale_Helper</class>
+            </filolocale>
+        </helpers>
+    </global>
+
+</config>

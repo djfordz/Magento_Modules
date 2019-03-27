@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <filoaffiliate translate="title" module="filoaffiliate">
+                                        <title>Filofax Affiliate Program</title>
+                                        <sort_order>100</sort_order>
+                                    </filoaffiliate>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

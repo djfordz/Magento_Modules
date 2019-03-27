@@ -1,0 +1,22 @@
+<?php
+$collection = $this->getProductCollectionById(40);
+?>
+<div class="filofax-collections">
+    <?php if (!empty($collection)): ?>
+        <?php if ($collection->count() > 0): ?>
+         <ul class="filofax-collections-list">
+            <?php foreach ($collection as $category): ?>
+            <?php $resizedImageUrl = $this->resizeImageUrl($category->getCollectionsImage(), 250); ?>
+                <li class="filofax-collections-item">
+                    <a class="filofax-collections-link" href="<?php echo $category->getUrl(); ?>" title="<?php echo $category->getName(); ?>">
+                        <img class="filofax-collections-img" src="<?php echo $resizedImageUrl; ?>"  alt="<?php echo $category->getName(); ?>" />
+                        <div class="">
+                        <h1><?php echo $category->getName(); ?></h1>
+                        </div>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+    <?php endif; ?>
+</div>

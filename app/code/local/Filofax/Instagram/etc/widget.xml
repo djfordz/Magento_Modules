@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<widgets>
+    <filogram_instagram type="filogram/instagram" translate="name description" module="filogram">
+        <name>Filofax Instagram</name>
+        <description type="desc">Embeds Instagram Posts</description>
+        <parameters>
+            <template translate="label">
+                <label>Frontend Template</label>
+                <visible>0</visible>
+                <required>1</required>
+                <type>select</type>
+                <value>filofax/filogram/instagram.phtml</value>
+            </template>
+            <widget_id translate="label">
+                <label>Widget ID</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>meigeewidgetsbizarre/number</source_model>
+                <description>Generated automatically</description>
+            </widget_id>
+            <image_width translate="label">
+                <label>Image Width</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <description>Widget Image Width</description>
+            </image_width>
+            <image_height>
+                <label>Image Height</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <description>Widget Image Height</description>
+            </image_height>
+            <title translate="label">
+                <label>Title</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+                <description>Title of Widget Block</description>
+            </title>
+            <autoSlide translate="label">
+                <label>Auto Slide</label>
+                <description>Enables automatic cycling through slides</description>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>0</value>
+            </autoSlide>
+            <autoSlideTimer translate="label">
+                <label>Auto Slide Timer</label>
+                <description>The time (in milliseconds) that a slide will wait before automatically navigating to the next slide</description>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+            </autoSlideTimer>
+            <autoSlideTransTimer translate="label">
+                <label>Auto Slide Trans Timer</label>
+                <description>The time (in milliseconds) required for all automatic animations to move between slides</description>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+            </autoSlideTransTimer>
+        </parameters>
+    </filogram_instagram>
+</widgets>

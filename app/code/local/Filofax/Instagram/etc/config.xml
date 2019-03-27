@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Filofax_Instagram>
+            <version>1.0.0</version>
+        </Filofax_Instagram>
+    </modules>
+    <global>
+        <blocks>
+            <filogram>
+                <class>Filofax_Instagram_Block</class>
+            </filogram>
+        </blocks>
+        <helpers>
+            <filogram>
+                <class>Filofax_Instagram_Helper</class>
+            </filogram>
+        </helpers>
+        <models>
+            <filogram>
+                <class>Filofax_Instagram_Model</class>
+            </filogram>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <filogram>
+                    <file>filofax/instagram.xml</file>
+                </filogram>
+            </updates>
+        </layout>
+    </frontend>
+</config>

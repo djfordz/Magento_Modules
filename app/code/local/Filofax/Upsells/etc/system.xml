@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <filoupsell translate="label" module="filoupsell">
+            <class>separator-top</class>
+            <label>Filofax Yearly Upsells</label>
+            <tab>filolocale</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>7000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+            	<general translate="label">
+                    <label>Filofax Upsell General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable/Disable</label>
+                            <comment>Enable Filofax Yearly Upsell Banner on Product View Page</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <year translate="label">
+                            <label>Year upsell applies to</label>
+                            <comment>Enter year of the product you want banner to show</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>filoupsell/system_config_source_year</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </year>
+                    </fields>
+                </general>
+            </groups>
+        </filoupsell>
+    </sections>
+</config>

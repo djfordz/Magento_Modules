@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<layout version="1.0.0">
+    <checkout_onepage_success translate="label">
+        <reference name="head">
+            <block type="core/template" name="success_head" template="filofax/success_head.phtml" />
+        </reference>
+        <reference name="content">
+            <block type="filoaffiliate/affiliate" name="filoaffiliate.affiliate" as="affiliate" template="filofax/affiliate.phtml" />
+        </reference>
+    </checkout_onepage_success>
+</layout>

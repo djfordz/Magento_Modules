@@ -1,0 +1,28 @@
+/* -- Locale Switcher @dford -- */
+#locale-wrapper #locale-switcher.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+}
+#locale-wrapper #locale-switcher.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+}
+#locale-wrapper {float: right; margin-left: 15px;}
+#locale-wrapper .main-locale {margin: .5em 0; line-height: 1; list-style: none;}
+#locale-wrapper .main-locale li img {margin: -2px 3px 0 0;}
+#locale-wrapper .main-locale li {padding: 2px 0 0; display: inline-block; line-height: 1; font-size: 1.1em;}
+#locale-wrapper #locale-switcher {z-index: 1000; width: 675px; padding: 10px; box-shadow: 0 0 .4em rgba(0, 0, 0, 0.2); top: 30px; position: absolute; background-color: #f5f5f5; right: 0; border-bottom: 7px solid #0072ce; transition: visibility .2s .15s}
+#locale-wrapper #locale-switcher .locale-list {-moz-column-count: 4; -webkit-column-count: 4; column-count: 4; list-style: none;}
+#locale-wrapper #locale-switcher .locale-list * {-webkit-column-break-inside: avoid; -moz-column-break-inside: avoid; column-break-inside: avoid;}
+#locale-wrapper #locale-switcher .locale-list li {padding: 0; line-height: 2rem; text-align: left; display: block; list-style: none;}
+#locale-wrapper #locale-switcher .locale-list li a img {display: inline-block; vertical-align: middle; margin-right: 2px;}
+#locale-wrapper #locale-switcher .locale-list li a {font-size: 1.1em;}
+
+@media (min-width:650px) and (max-width: 767px) {
+  #locale-wrapper #locale-switcher {right: -115px;}
+}
+@media (max-width: 649px) {
+  #locale-wrapper #locale-switcher {width: 160px;} 
+  #locale-wrapper #locale-switcher .locale-list {-moz-column-count: 1; -webkit-column-count: 1; column-count: 1;}
+}
+/* -- end locale switcher -- */

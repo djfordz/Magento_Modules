@@ -1,0 +1,134 @@
+.personalization-options {max-width: 400px; margin-top: 40px; margin-bottom: 40px;}
+.personalization-options a, .personalization-options a:active, .personalization-options a:visited, .personalization-options a:hover {color: #555555;}
+.personalization-options .options-list {background-color: #eee; padding: 2px 0 2px 5px; margin: 0;}
+.product-options .personalization-options .options-list .options-initial, .product-options .personalization-options .options-list .dropdown-toggle .change label, .product-options .personalization-options .options-list .dropdown-toggle .change span, .personalization-options .options-list .options-arrow {font-family: Biryani, sans-serif ; font-size: 14px; margin-top: 1px; line-height: 1.5em; text-transform: unset; letter-spacing: normal; vertical-align: unset; -webkit-text-stroke-width: 0; color: #444444; font-weight: 400; cursor: pointer;}
+.personalization-options .options-list li {margin-top: 10px;}
+.personalization-options .options-title span {padding: 5px 3px 3px 3px}
+.dropdown-toggle .change span.options-plus {margin-right: 9px !important; font-size: 22px !important;}
+.product-options .personalization-options .options-text-box .note, .product-options .personalization-options .options-text-box .price-notice {margin: 0; color: #888888;}
+.product-options .personalization-options .options-text-box .price-notice {margin-top: -3px !important;}
+.personalization-options .options-list .options-arrow, .options-list .options-plus {font-size: 22px; float: right;}
+.personalization-options .options-list .options-arrow {margin-right: 10px;}
+.personalization-options .options-list .options-plus {margin-right: 5px;}
+.personalization-options .options-list .dropdown-toggle .change .options-arrow.caret.down {margin-top: 2px !important;}
+.personalization-options .options-list .dropdown-toggle .change .options-arrow.caret.up {margin-top: 8px !important;}
+.personalization-options .options-list .dropdown-menu, .options-title {border-top: 1px solid #888888; padding-top: 3px; }
+.product-options .personalization-options .options-title:first-child {border: none; padding-left: 5px;}
+.product-options .personalization-options .options-list {margin-bottom: 0;}
+.dropdown-menu .input-box ul li {display: inline-block; padding-right: 15px;}
+.dropdown-menu .input-box ul li img {width: 50px; height: 50px; }
+.button-dropdown:first-of-type .dropdown-menu:first-of-type .button-dropdown > .dropdown-menu:first-of-type > .input-box > ul > li > span.label {display: inline-block; vertical-align: middle; margin-left: .92em; margin-top: 10%}
+.button-dropdown:first-of-type .dropdown-menu:first-of-type .button-dropdown > .dropdown-menu:first-of-type > .input-box > ul > li > label > img {width: 50px; height: auto;}
+.dropdown-menu .input-box ul li input.radio {position: relative; z-index: 100; float: none;}
+.dropdown-menu .input-box ul li span.label {margin-left:0; text-align: center; margin-top: 3px;}
+.bold {font-weight: bold !important; color: #222222 !important;}
+.normal {font-weight: normal}
+.options-text-list .dropdown-menu dt, .options-text-list .dropdown-menu dd {display: inline-block;}
+.options-text-list .dropdown-menu dd {margin: 0;}
+.product-options .personalization-options dd .input-box {margin-bottom: 3px;}
+.options-text-list .options-text-box:first-child {margin-top: 10px;}
+.options-text-list .dropdown-menu .options-text-box:last-child dt {margin-top: 5px;}
+.options-text-list .dropdown-menu dt {margin-top: 8px; margin-right: 5px;}
+.button-dropdown .dropdown-menu dd .input-box input[type=text] {width: 300px; background-color: #fff; font-style: normal; border-color: transparent; color: #555555; padding: 7px 5px 3px 5px; font-size: 12px;}
+.button-dropdown .dropdown-menu dd .input-box input[type=text]::placeholder {padding: 7px 5px 3px 5px; line-height: 1.5em;}
+.button-dropdown .dropdown-menu dd .input-box input[type=text]:placeholder-shown {padding: 7px 5px 3px 5px; line-height: 1.5em;}
+.button-dropdown .dropdown-menu dd .input-box input[type=text]:-ms-input-placeholder {padding: 7px 5px 3px 5px; line-height: 1.5em;}
+.button-dropdown .dropdown-menu dd .input-box input[type=text]:-moz-placeholder {padding: 7px 5px 3px 5px; line-height: 1.5em;}
+.button-dropdown .dropdown-menu dd .input-box input[type=text]::-moz-placeholder {padding: 7px 5px 3px 5px; line-height: 1.5em;}
+.button-dropdown .dropdown-menu dd .input-box input[type=text]::-webkit-input-placeholder {padding: 7px 5px 3px 5px; line-height: 1.5em;}
+.options-title .change span {padding: 0;}
+.options-title .change span:first-child {margin-left: 5px;}
+
+.personalization-options .options-title .change .tcs {font-weight: bold;}
+.product-options .personalization-options dt {clear:both;}
+.product-options .personalization-options dt:first-child {padding-top: 3px;}
+.product-options .dropdown-menu:first-child .button-dropdown {margin-top: 0;}
+.options-text-box .note {display: block;}
+.dropdown-menu .input-box ul li input[type=radio] {
+    position: absolute; opacity: 0; width: 0; height: 0;
+}
+.dropdown-menu .input-box ul li input[type=radio] + img {
+    cursor: pointer;
+}
+.dropdown-menu .input-box ul li input[type=radio]:checked + img {
+    outline: 2px solid #333;
+}
+.caret {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+@media (min-width: 768px) and (max-width: 976px) {
+   .button-dropdown .dropdown-menu dd .input-box input[type=text] {width: 150px;}
+}
+
+@media (min-width: 976px) and (max-width: 1280px) {
+    .button-dropdown .dropdown-menu dd .input-box input[type=text] {width: 275px;}
+}
+@media (max-width: 425px) {
+  .button-dropdown .dropdown-menu dd .input-box input[type=text] {width: 250px;}
+}
+@media (max-width: 375px) {
+ .button-dropdown .dropdown-menu dd .input-box input[type=text] {width: 200px;}
+}
+
+.category-products .product-container .product-img-box .label-type-6 .label-personalize {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    padding: 0 8px;
+    z-index: 9;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    opacity: 1.0;
+    filter: alpha(opacity=80);
+}
+
+.product-view .label-type-6 .label-personalize {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    padding: 0 8px;
+    z-index: 9;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    opacity: 1.0;
+    filter: alpha(opacity=80);
+}
+
+.labels-new-sale .product-container .product-img-box .label-type-6 .label-personalize {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    padding: 0 8px;
+    z-index: 9;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    opacity: 1.0;
+    filter: alpha(opacity=80);
+}
+
+#product-options-wrapper input.qty {
+    background-color: transparent;
+}

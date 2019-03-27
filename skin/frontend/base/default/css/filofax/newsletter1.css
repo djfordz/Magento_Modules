@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Gotham";
+    font-weight: normal;
+    font-style: normal;
+    src: url("Gotham-Medium.otf") format("opentype");
+}
+
+.newsletter-line .grid_12 {
+    background-size: unset;
+    padding-bottom: unset;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#popup-block .newsletter-line {
+    font-family: "Gotham", sans-serif;
+}
+.newsletter-line .grid_5.block-subscribe h3 {
+    color: white;
+    font-size: 2.1em;
+    font-weight: normal;
+    font-kerning: unset;
+    letter-spacing: normal;
+}
+
+#popup-block .newsletter-line .block-content label {
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    font-kerning: unset;
+    letter-spacing: normal;
+}
+
+#popup-block .block-subscribe input {
+    height: 20px;
+    background-color: #c4d7de;
+}
+
+#popup-block .block-subscribe input[type="text"].input-text::placeholder, #popup-block .block-subscribe input[type="text"].input-text::-webkit-input-placeholder {
+    color: #f2f2f2;
+    text-align: center;
+    font-weight: 500;
+}
+
+.newsletter-line .block-subscribe .input-box button {
+    margin: 0 auto;
+    height: 40px;
+}
+
+#popup-block .block-subscribe .button span span {
+    color: #a5c1cd;
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+    line-height: 2;
+    padding-top: 1px;
+    font-kerning: unset;
+    letter-spacing: normal;
+}
+
+#popup-block .block-subscribe {
+    width: 80%;
+    padding-top: 27px;
+    width: 80%;
+    margin: 0 auto auto 39px;
+    float: left;
+}
+
+.newsletter-line .block-subscribe .input-box {
+    width: 100%;
+}
+
+#popup-block .popup-bottom {
+    left: 34%;
+    margin-left: 0px;
+    bottom: 18px;
+    font-weight: 500;
+    font-size: 9px;
+}
+
+@media only screen and (max-width: 767px) {
+    .newsletter-line .grid_12 {
+        background-size: unset;
+        padding-bottom: unset;
+    }
+
+    #popup-block .block-subscribe {
+        padding-top: 25px;
+        margin: 0 auto auto 8%;
+    }
+
+    .newsletter-line .block-subscribe button.button {
+        float: none;
+        margin: 0 auto auto 3%;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+    .newsletter-line .grid_12 {
+        background-size: unset;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    #popup-block {
+        width: 400px !important;
+    }
+    .newsletter-line .block-subscribe .input-box {
+        width: 76% !important;
+        margin: 0 auto 0 auto;
+        float: none;
+    }
+
+    #popup-block .popup-bottom {
+        left: 36%;
+        bottom: -80px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #popup-block .popup-bottom {
+        left: 36%;
+        bottom: -10px;
+    }
+}
+
+@media only screen and (max-width: 977px) and (min-width: 768px) {
+    #popup-block .block-subscribe input[type="text"].input-text {
+        margin: 0 auto .75em auto;
+        width: 76%;
+    }
+    #popup-block {
+        height: auto !important;
+        width: 400px !important;
+    }
+    #popup-block .popup-bottom {
+        left: 34%;
+        bottom: 18px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #popup-block .popup-bottom {
+        left: 26%;
+    }
+}
+
+#popup-block .block-subscribe input[type="text"].input-text:-ms-input-placeholder, #popup-block .block-subscribe input[type="text"].input-text {
+    color: #f2f2f2;
+    text-align: center;
+    font-weight: 500;
+}
